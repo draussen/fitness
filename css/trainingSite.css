@@ -1,0 +1,51 @@
+.trainingMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media(max-width:844px) {
+    .trainingMain {
+        grid-template-columns: 1fr;
+        grid-template-areas: "a b" / 1fr 1fr;
+    }
+
+
+    header {
+        min-height: 140px;
+    }
+}
+
+.goToTheory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #222a38;
+    opacity: 1;
+    background-image: repeating-radial-gradient(circle at 100% 0, transparent 0, #000000 17px), repeating-linear-gradient(#00000055, #000000);
+
+}
+
+.goToTheory:hover {
+    background-color: #0000009d;
+}
+
+.goToMachines {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #222a38;
+    opacity: 1;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #000000 17px), repeating-linear-gradient(#00000055, #000000);
+}
+
+.goToMachines:hover {
+    background-color: #0000009d;
+}
+
+a {
+    text-decoration: none;
+    color: #f2f2f2;
+    cursor: pointer;
+}

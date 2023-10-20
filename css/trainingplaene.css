@@ -1,0 +1,79 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+
+
+main {
+    max-width: 1200px; /* Set a maximum width for the main content */
+    margin: 0 auto; /* Center align the main content */
+    padding: 20px; /* Add some padding to the content */
+}
+
+main h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+main h4 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+main table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+main th, main td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+
+
+main a {
+    text-decoration: none;
+    color: #007bff; 
+}
+
+main p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+    main h3 {
+        font-size: 20px;
+    }
+    main h4 {
+        font-size: 18px;
+    }
+    main table {
+        margin-top: 5px;
+    }
+    main th, main td {
+        padding: 6px;
+    }
+    main p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+}
+
+.subhead{
+  text-align: center;
+}

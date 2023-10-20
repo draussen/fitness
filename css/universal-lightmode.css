@@ -1,0 +1,78 @@
+@import url("footer.css");
+@import url("header-lightmode.css");
+
+::selection {
+    color: #f2f2f2;
+    background: rgb(117, 117, 117);
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    color: #242423;
+    height: 100%;
+    animation: fadeInAnimation ease 0.5s, gradient 50s ease infinite;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #fafafa, #f7f7f7, #FFFAFA, #f5f5f5);
+    background-size: 400% 400%;
+}
+
+body.dark {
+    background: linear-gradient(-45deg, #25292f, #051b3d, #0d3c4d, #0a4134);
+    color: #f2f2f2;
+}
+
+.subtitle {
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+main {
+    flex: 1;
+    display: inline-block;
+    overflow: hidden;
+}
+
+@media(max-width:1000px) {
+    main{
+        margin-top: 160px;
+        min-height: calc(100vh - 310px);
+    }
+}
+
+@media(max-width:844px) {
+    main{
+        margin-top: 140px;
+        min-height: calc(100vh - 140px);
+    }
+}

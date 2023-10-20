@@ -1,0 +1,11 @@
+footer {
+    background-color: rgba(219, 219, 219, 0.74);
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.dark footer {
+    background-color: #0e11174d;
+}

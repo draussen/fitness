@@ -1,0 +1,63 @@
+@import url("footer.css");
+@import url("header-lightmode.css");
+@import url("clock.css");
+
+:root{
+    --font-color: #f2f2f2;
+}
+
+.lightmode-universal{
+    --font-color: black;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    color: var(--font-color);
+    height: 100%;
+    animation: fadeInAnimation ease 0.5s, gradient 50s ease infinite;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #25292f, #051b3d, #0d3c4d, #0a4134);
+	background-size: 400% 400%;
+}
+
+.subtitle {
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+main {
+    flex: 1;
+    display: inline-block;
+    overflow: hidden;
+    min-height: calc(100vh - 325px);
+    margin-top: 175px;
+}

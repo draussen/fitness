@@ -1,0 +1,54 @@
+.grid-container {
+    margin-top: 7%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(300px, 1fr));
+    grid-gap: 10px;
+}
+
+.grid-item {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
+    box-shadow: rgba(231, 231, 231, 0.4) 0px 5px, rgba(161, 161, 161, 0.3) 0px 10px, rgba(117, 117, 117, 0.2) 0px 15px, rgba(87, 87, 87, 0.1) 0px 20px, rgba(51, 51, 51, 0.05) 0px 25px;
+}
+
+.grid-item h2 {
+    transition: transform 0.3s ease;
+}
+
+.grid-item h2:hover {
+    transform: scale(1.1);
+}
+
+h2 {
+    text-decoration: none;
+}
+
+a {
+    user-select: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 1000px) {
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .functionalTraining {
+        margin-top: 8%;
+        height: 100px
+    }
+
+    .vbenchlegcurl {
+        margin-bottom: 20%;
+    }
+}

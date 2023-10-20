@@ -1,0 +1,22 @@
+.introduction {
+    margin-bottom: 5%;
+}
+
+.subhead {
+    padding-top: 3%;
+    text-align: center;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    border: 10px solid black;
+  }
+
+@media (max-width: 844px) {
+
+    .subhead {
+        padding-top: 13%;
+    }
+
+}
