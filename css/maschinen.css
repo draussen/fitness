@@ -37,6 +37,13 @@ a {
     color: inherit;
 }
 
+.subhead {
+    text-align: center;
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 @media (max-width: 1000px) {
 
     .grid-container {
